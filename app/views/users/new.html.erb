@@ -2,7 +2,7 @@
 <p>Find me in app/views/users/new.html.erb</p> -->
 
 <% @page_title = "UserAuth | Signup" %>
-<div class="Sign_Form">
+<div>
   <h1>Sign Up</h1>
   <%= form_for @user do |f| %>
 
@@ -16,7 +16,7 @@
   <% if @user.errors.any? %>
 
 
-  <ul class="Signup_Errors">
+  <ul>
     <% for message_error in @user.errors.full_messages %>
     <li>* <%= message_error %></li>
     <% end %>

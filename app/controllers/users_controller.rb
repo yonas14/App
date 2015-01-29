@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   def index
     @user = User.all
   end
+
+
   def new
     @user = User.new #user gets created and then gets sent to the create method.
   end
