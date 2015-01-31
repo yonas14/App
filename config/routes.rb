@@ -5,9 +5,11 @@ Rails.application.routes.draw do
 
   get 'signup'  => 'users#new'
 
+
   #get 'posts'
   resources :users  
   resources :posts
+  resources :status
   #resources :sessions
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
